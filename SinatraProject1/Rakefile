@@ -1,0 +1,13 @@
+require_relative './config/environment'
+
+require 'sinatra/activerecord/rake'
+
+desc 'A console' #research what this does
+task :console do
+    Pry.start 
+end
+
+#7:mins 40:seconds in, we have created a gem using bundle init then putting gems on gemfile
+#creating config.ru, require files, make sure 3 folders one for config, one for db
+#one for app controller
+#rackup is config.ru
